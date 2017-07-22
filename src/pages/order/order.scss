@@ -1,0 +1,50 @@
+page-order {
+  ion-content {
+    ion-grid {
+      ion-row {
+        h2 {
+          background: grey;
+        }
+        div.colapse {
+          max-height: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          overflow: hidden;
+          transition: 0.3s all ease;
+          ion-col.data {
+            max-width: 50%;
+            ion-card {
+              height: 200px;
+              height: 50px;
+              transition: 0.2s all ease-in-out;
+              ion-card-content {
+                ion-card-title {
+                  font-size: 1.1rem;
+                }
+              }
+            }
+            ion-card.active {
+              transform: scale(1.1);
+              background: lightgreen;
+              ion-card-content {
+                ion-card-title {
+                  font-size: 1.1rem;
+                }
+              }
+            }
+          }
+        }
+        div.show-small { max-height: 250px; }
+        div.show-medium { max-height: 500px; }
+        div.show-big { max-height: 1000px; }
+      }
+    }
+  }
+}
+
+ion-card.step0 {
+  height: 70px !important;
+}
